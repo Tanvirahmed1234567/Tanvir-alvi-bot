@@ -3,7 +3,6 @@ module.exports.config = {
 	version: "1.0.2",
 	permission: 3,
   prefix: false,
-  premium: false,
 	credits: "Mirai Team",
 	description: "running shell",
 	category: "system",

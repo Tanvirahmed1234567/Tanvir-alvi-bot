@@ -3,7 +3,6 @@ config: {
   name: "rndm",
   version: "0.0.2",
   permission: 0,
-  premium: false,
   prefix: true,
   credits: "Nayan",
   description: "rndm video",
@@ -50,4 +49,4 @@ start: async function({ nayan, events, args, lang }) {
       attachment: allvideo
   }, events.threadID, events.messageID);
 }
-} 
+}

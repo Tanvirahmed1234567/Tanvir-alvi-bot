@@ -1,9 +1,8 @@
 module.exports.config = {
-  name: "trans",
+  name: "translate",
   version: "1.0.1",
   permission: 0,
-  credits: "ALVI",
-  premium: false,
+  credits: "ryuko",
   description: "text translation",
   prefix: false,
   category: "without prefix",

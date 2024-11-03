@@ -2,11 +2,10 @@ module.exports.config = {
   name: "prefix",
   version: "1.0.0",
   permission: 0,
-  credits: "ALVI",
+  credits: "ryuko",
   prefix: true,
   description: "guide",
   category: "system",
-  premium: false,
   usages: "",
   cooldowns: 5,
 };
@@ -28,7 +27,7 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
       if (config.PREFIX == null) {
         return out(`bot prefix : ${global.config.PREFIX}`)
       }
-      else return out(`bot prefix : ${global.config.PREFIX}`)
+      else return out(`●❯────────────────❮●\n        -♦𝐓𝐀𝐍𝐕𝐈𝐑-𝐁𝐎𝐓♦-       \n●❯────────────────❮●\n-🔰-𝐒𝐲𝐬𝐭𝐞𝐦 𝐩𝐫𝐞𝐟𝐢𝐱-: ${global.config.PREFIX}\n-🔰-𝐘𝐨𝐮𝐫 𝐛𝐨𝐱 𝐜𝐡𝐚𝐭 𝐩𝐫𝐞𝐟𝐢𝐱-:${global.config.PREFIX}\n●❯────────────────❮●`)
     }
 
   });

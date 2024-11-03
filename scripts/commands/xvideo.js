@@ -22,10 +22,10 @@ module.exports.run = async function({ api, event }) {
   let count = res.data.count;
   let callback = function () {
           api.sendMessage({
-            body: `♻️--『 🅰🅻🆅🅸 🅱🅾🆃 』--♻️`,
+            body: `♻️--『  ❊ 𝗔𝗥𝗬𝗔𝗡 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬 ❊ 』--♻️`,
             attachment: fs.createReadStream(__dirname + `/data/kanna.${ext}`)
           }, event.threadID, () => fs.unlinkSync(__dirname + `/data/kanna.${ext}`), event.messageID);
         };
         request(res.data.data).pipe(fs.createWriteStream(__dirname + `/data/kanna.${ext}`)).on("close", callback);
       })
-}
+                                    }

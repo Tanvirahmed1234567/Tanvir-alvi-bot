@@ -72,11 +72,11 @@ module.exports.run = async function ({ event, api, args }) {
     if (!mention) return api.sendMessage("Please tag 1 person", threadID, messageID);
     else {
         var one = senderID, two = mention;
-        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•──────╮\n         -𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥_//-        \n শখের নারী গুতা দেওয়ার আগে চিল্লানি দেই_____😩🥺🥵\n╰──────•◈•──────╯" + tag + '',
+        return makeImage({ one, two }).then(path => api.sendMessage({ body: "╭──────•◈•──────╮\n     𝐅𝐀𝐇𝐈𝐌 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘         \n শখের নারী গুতা দেওয়ার আগে চিল্লানি দেই_____😩🥺🥵\n╰──────•◈•──────╯" + tag + '',
             mentions: [{
           tag: tag,
           id: mention
         }],
      attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
     }
-}
+                                                                     }

@@ -1,34 +1,19 @@
 module.exports.config = {
-  name: "restart",
-  version: "1.0.0",
-  permssion: 3,
-  prefix: true,
-  premium: false,
-  credits: "ALVI",
-  description: "Restart the Bot",
-  category: "system",
-  usages: "",
-  cooldowns: 5
+	name: "restart",
+	version: "7.0.0",
+	permission: 2,
+	credits: "ryuko",
+	prefix: false,
+	description: "restart bot system",
+	category: "admin",
+	usages: "",
+	cooldowns: 0,
+	dependencies: {
+		"process": ""
+	}
 };
-
-module.exports.run = async ({ api, event, args }) => {
+module.exports.run = async function({ api, event, args, Threads, Users, Currencies, models }) {
+  const process = require("process");
   const { threadID, messageID } = event;
-  return api.sendMessage(`╭──────────────➣
-│𝗖𝗮𝘆𝗯𝗲𝗿.𝗧𝗮𝗻𝘃𝗶𝗿 𝗦𝗘𝗥𝗩𝗘𝗥 is
-│Trying To Restart...♻️
-│━━━━•🔰•━━━━┓
-│❖Restarting: in 6's
-│
-│
-│ ╔══╦╦╗─╔╦══╗
-│ ║╔╗║║╚╦╝╠║║╝
-│ ║╠╣║╚╗║╔╬║║╗
-│ ╚╝╚╩═╩═╝╚══╝
-│	     Restarted..
-│			 🄱🄾🅃
-│  Bot by 𝗧𝗮𝗻𝘃𝗶𝗿 
-│━━━━•♻️•━━━┛
-│𝗖𝗮𝘆𝗯𝗲𝗿.𝗧𝗮𝗻𝘃𝗶𝗿 𝗦𝗘𝗥𝗩𝗘𝗥 is
-│Successfully Restarted
-╰──────────────➣`, threadID, () => process.exit(1));
+  api.sendMessage(`🔄 | 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝚁𝙾𝙱𝙾𝚃.... ${global.config.BOTNAME} ai, please be patient.`, threadID, ()=> process.exit(1));
 }

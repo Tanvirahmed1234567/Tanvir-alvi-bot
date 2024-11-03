@@ -2,9 +2,8 @@ module.exports.config = {
 	name: "weather",
 	version: "1.0.1",
 	permission: 0,
-	credits: "ALVI",
+	credits: "ryuko",
   prefix: false,
-  premium: false,
 	description: "see weather information in the area",
 	category: "without prefix",
 	usages: "[location]",
@@ -31,7 +30,7 @@ module.exports.run = async ({ api, event, args, getText }) => {
 	const moment = global.nodemodule["moment-timezone"];
 	const { throwError } = global.utils;
 	const { threadID, messageID } = event;
-  const { weather } = global.apiryuko;
+  const { weather } = global.apiNayan;
 	
 	var city = args.join(" ");
 	if (city.length == 0) return throwError(this.config.name, threadID, messageID);

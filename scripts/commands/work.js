@@ -4,7 +4,6 @@ module.exports.config = {
 	permission: 0,
 	credits: "ryuko",
 	prefix: true,
-        premium: false,
 	description: "earning money",
 	category: "with prefix",
   cooldowns: 5,
@@ -93,4 +92,4 @@ module.exports.run = async ({ event, api, Currencies, getText }) => {
             return;
         }, messageID);
     }     
-				      }
+}

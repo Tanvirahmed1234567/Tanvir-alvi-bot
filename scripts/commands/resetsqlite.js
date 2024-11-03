@@ -4,7 +4,6 @@ module.exports.config = {
 	permission: 3,
 	credits: "ryuko",
   prefix: true,
-  premium: false,
 	description: "reset database",
 	category: "operator",
 	usages: "[shell]",
@@ -19,7 +18,7 @@ const { exec } = require("child_process");
 const process = require("process");
 const { threadID, messageID } = event;
 let text = args.join(" ")
-exec(`rm -rf ../../ryuko/system/database/datasqlite/ryuko.sqlite`, (error, stdout, stderr) => {
+exec(`rm -rf ../../Nayan/system/database/datasqlite/Nayan.sqlite`, (error, stdout, stderr) => {
     if (error) {
         api.sendMessage(`error : \n${error.message}`, event.threadID, event.messageID);
         return;

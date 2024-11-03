@@ -3,7 +3,6 @@ module.exports.config = {
      version: "1.1.0",
      permission: 0,
      credits: "ryuko",
-     premium: false,
      description: "talk voice message reply",
      prefix: false,
      category: "without prefix",
@@ -13,7 +12,7 @@ module.exports.config = {
 module.exports.run = async function({ api, event, args, Threads }) {
 try {
   const axios = require("axios");
-  const {talk} = global.apiryuko;
+  const {talk} = global.apiNayan;
   const {createReadStream, unlinkSync} = global.nodemodule["fs-extra"];
     const {resolve} = global.nodemodule["path"];
   let ask = args.join(" ");

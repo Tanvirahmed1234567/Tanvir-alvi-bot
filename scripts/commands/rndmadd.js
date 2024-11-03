@@ -2,7 +2,6 @@ module.exports.config = {
   name: "add",
   version: "0.0.2",
   permission: 0,
-  premium: false,
   prefix: true,
   credits: "Nayan",
   description: "",

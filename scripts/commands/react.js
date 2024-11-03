@@ -5,7 +5,6 @@ module.exports.config = {
 	credits: "ryuko",
 	description: "react posts by id",
   prefix: true,
-  premium: false,
 	category: "admin",
 	usages: "[postID] <reaction type>: (unlike/like/love/heart/haha/wow/sad/angry)",
 	cooldowns: 1

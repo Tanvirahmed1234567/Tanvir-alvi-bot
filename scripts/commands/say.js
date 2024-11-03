@@ -1,9 +1,8 @@
 module.exports.config = {
-	name: "say",
+	name: "say2",
 	version: "1.0.0",
 	permission: 0,
-	credits: "Hamim",
-  premium: false,
+	credits: "ryuko",
 	description: "text to voice speech messages",
   prefix: true,
 	category: "with prefix",

@@ -1,10 +1,9 @@
 module.exports.config = {
-	name: "sendmsg",
+	name: "sendmsg2",
 	version: "0.0.2",
 	permission: 2,
-  prefix: false,
-  premium: false,
-	credits: "ALVI",
+  prefix: true,
+	credits: "Nayan",
 	description: "sendmsg",
 	category: "admin",
 	usages: "sendmsg [user]/[thread] id msg",
