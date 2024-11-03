@@ -5,10 +5,9 @@ module.exports.config = {
     name: "operatornoti",
     version: "1.0.0",
     permission: 3,
-    credits: "ryuko",
+    credits: "NAYAN",
     description: "",
     prefix: true,
-    premium: false,
     category: "operator",
     usages: "[msg]",
     cooldowns: 5,
@@ -43,7 +42,7 @@ const getAtm = (atm, body) => new Promise(async (resolve) => {
 module.exports.handleReply = async function ({ api, event, handleReply, Users, Threads, getText }) {
     
     const moment = require("moment-timezone");
-      var gio = moment.tz("Asia/Manila").format("DD/MM/YYYY - HH:mm:s");
+      var gio = moment.tz("Asia/Dhaka").format("DD/MM/YYYY - HH:mm:s");
     const { threadID, messageID, senderID, body } = event;
     let name = await Users.getNameUser(senderID);
     switch (handleReply.type) {

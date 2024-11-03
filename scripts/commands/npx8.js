@@ -2,11 +2,10 @@ const fs = require("fs");
 module.exports = {
 	config:{
 	name: "npx8",
-	version: "1.0.1",
-	premium: false,	
-	prefix: true,
+				version: "1.0.1",
+				prefix: false,
 	permssion: 0,
-	credits: "Alvi", 
+	credits: "nayan", 
 	description: "Fun",
 	category: "no prefix",
 	usages: "😒",
@@ -29,7 +28,7 @@ const media = (
 
 	if (body.indexOf("🙈")==0 || body.indexOf("🙉")==0 || body.indexOf("🙊")==0 || body.indexOf("🫣")==0 || body.indexOf("🤭")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
 		var msg = {
-				body: "-•|•😂 asØleÎ nakÎ_//-😦🫵🏼",
+				body: "-♦𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥♦-\n🔰___-•|•😂 asØleÎ nakÎ_//-😦🫵🏼___🔰",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);

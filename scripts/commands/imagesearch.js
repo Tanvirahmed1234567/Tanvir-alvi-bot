@@ -4,8 +4,7 @@ module.exports.config = {
 	name: "searchimage",
 	version: "1.0.0",
 	permission: 0,
-	credits: "ALVI",
-  premium: false,
+	credits: "nayan",
 	prefix: true,
 	description: "search an image",
 	category: "with prefix",
@@ -46,7 +45,7 @@ var query = (event.type == "message_reply") ? event.messageReply.body : args.joi
   
   for(let image of result) {
     // Only show 6 images
-    if(counter >= 6)
+    if(counter >= 20)
       break;
       
     console.log(`${counter} : ${image.url}`);
@@ -85,7 +84,7 @@ var query = (event.type == "message_reply") ? event.messageReply.body : args.joi
   api.sendMessage("sending search result.", event.threadID, event.messageID)
   
   let msg = {
-    body: `image search result for ${query}\n\nfound : ${result.length} image${result.length > 1 ? 's' : ''}\nonly showing : 6 images.`,
+    body: `image search result for ${query}\n\nfound : ${result.length} image${result.length > 1 ? 's' : ''}\nonly showing : 20 images.`,
     attachment: streams
   };
   

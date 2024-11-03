@@ -3,9 +3,8 @@ module.exports.config = {
 	version: "1.0.0",
 	permission: 2,
 	prefix: true,
-	credits: "ryuko",
+	credits: "Nayan",
 	description: "change the bot language",
-  premium: false,
 	category: "admin",
 	usages: "[vi] [en]",
 	cooldowns: 5

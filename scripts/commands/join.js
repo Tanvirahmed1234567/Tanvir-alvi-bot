@@ -7,7 +7,6 @@ module.exports.config = {
     prefix: true,
     description: "join the bot groups are in",
     category: "admin",
-    premium: false,
     usages: "",
     cooldowns: 5
 };

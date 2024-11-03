@@ -3,11 +3,10 @@ const fs = require("fs");
 module.exports = {
   config:{
   name: "npx15",
-  version: "1.0.1",
-  premium: false,  
-  prefix: true,
+        version: "1.0.1",
+        prefix: false,
   permssion: 0,
-  credits: "Alvi", 
+  credits: "nayan", 
   description: "Fun",
   category: "no prefix",
   usages: "😒",
@@ -30,7 +29,7 @@ const media = (
 
   if (body.indexOf("🕌")==0 || body.indexOf("🕋")==0 || body.indexOf("surah")==0 || body.indexOf("surah")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
     var msg = {
-        body: " -•|•-Allah 🖤🥀 ",
+        body: "-♦𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥♦-\n 😊___-•|•-Allah 🖤🥀___😊 ",
         attachment: media
       }
       api.sendMessage( msg, threadID, messageID);

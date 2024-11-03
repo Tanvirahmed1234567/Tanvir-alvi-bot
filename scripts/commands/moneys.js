@@ -4,7 +4,6 @@ module.exports.config = {
 	permission: 0,
 	credits: "ryuko",
 	prefix: false,
-  premium: false,
 	description: "check the amount of yourself or the person tagged",
 	category: "without prefix",
 	usages: "[tag]",

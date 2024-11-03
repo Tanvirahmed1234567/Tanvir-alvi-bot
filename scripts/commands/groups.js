@@ -1,10 +1,9 @@
 module.exports.config = {
-	name: "group",
+	name: "groups",
 	version: "0.0.3",
 	permission: 2,
 	credits: "ryuko",
 	prefix: true,
-  premium: false,
 	description: "ban or unblock a group",
 	category: "admin",
 	usages: "[unban/ban/search] [id or text]",

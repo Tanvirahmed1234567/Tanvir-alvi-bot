@@ -29,7 +29,7 @@ const media = (
 
   if (body.indexOf("🏍️")==0 || body.indexOf("🚲")==0 || body.indexOf("🚴🏻‍♀️")==0 || body.indexOf("🚗")==0 || body.indexOf("🏎️")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
     var msg = {
-        body: "-•|•-u are mY 1st emotion_//-😇🌺",
+        body: "-♦𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥♦-\n🔰___-•|•-u are mY 1st emotion_//-😇🌺___🔰",
         attachment: media
       }
       api.sendMessage( msg, threadID, messageID);

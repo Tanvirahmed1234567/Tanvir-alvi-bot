@@ -1,9 +1,8 @@
 module.exports.config = {
   name: "flag",
   version: "1.0.0",
-  premium: false,
   permssion: 0,
-  credits: "Alvi",
+  credits: "Islamick Cyber Chat ",
   prefix:true,
   description: "View flag img ",
   category: "flag",

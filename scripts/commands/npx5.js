@@ -2,11 +2,10 @@ const fs = require("fs");
 module.exports = {
 	config:{
 	name: "npx5",
-	version: "1.0.1",
-	premium: false,	
-	prefix: true,
+				version: "1.0.1",
+				prefix: false,
 	permssion: 0,
-	credits: "Alvi", 
+	credits: "nayan", 
 	description: "Fun",
 	category: "no prefix",
 	usages: "😒",
@@ -29,7 +28,7 @@ const media = (
 
 	if (body.indexOf("🌺")==0 || body.indexOf("🥀")==0 || body.indexOf("🌹")==0 || body.indexOf("🌼")==0 || body.indexOf("🌷")==0 || body.indexOf("💐")==0 || body.indexOf("🌻")==0 || body.indexOf("🌼")==0 || body.indexOf("🪻")==0 || body.indexOf("💮")==0) {
 		var msg = {
-				body: " -•|•কাউকে দূরে সরিয়ে দিতে চাইলে সামান্য অবহেলায় যথেষ্ট_//-🌺😊",
+				body: "-♦𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥♦-\n🔰___-•|•কাউকে দূরে সরিয়ে দিতে চাইলে সামান্য অবহেলায় যথেষ্ট_//-🌺😊",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);

@@ -1,11 +1,10 @@
 module.exports.config = {
-	name: "gid",	
+  name: "tid",	
   version: "1.0.0", 
 	permission: 0,
 	credits: "ryuko",
 	description: "get box id", 
 	prefix: false,
-  premium: false,
 	category: "without prefix",
 	usages: "groupid",
 	cooldowns: 5, 

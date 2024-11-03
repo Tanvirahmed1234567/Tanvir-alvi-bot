@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 
 module.exports.config = {
-    name: "hentaivideo", 
+    name: "hvideo", 
     version: "1.0.0", 
     permssion: 0, 
     premium: false,
@@ -31,7 +31,7 @@ module.exports.run = async ({ api, event, args }) => {
         response.data.pipe(writer);
 
         writer.on('finish', () => {
-            api.sendMessage({ body: "♻️--『-𝗧𝗔𝗡𝗩𝗜𝗥-🅱🅾🆃』--♻️", attachment: fs.createReadStream(videoPath) }, event.threadID);
+            api.sendMessage({ body: "-🔰 -♦𝗕Ø𝗦𝗦 𝗧𝗔𝗡𝗩𝗜𝗥♦- 🔰-", attachment: fs.createReadStream(videoPath) }, event.threadID);
         });
 
         writer.on('error', (err) => {
