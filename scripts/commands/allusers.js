@@ -5,7 +5,6 @@ module.exports.config = {
     prefix: false,
     credits: "Deku",
     description: "Get all uid and names in Group.",
-    premium: false,
     category: "without prefix",
     cooldowns: 2
 };

@@ -5,11 +5,10 @@ module.exports.config = {
   name: "autoseen",
   version: "1.0.0",
   permission: 2,
-  credits: "ALVI",
+  credits: "ryuko",
   description: "turn on/off automatically seen when new messages are available",
   prefix: true,
   category: "system",
-  premium: false,
   usages: "on/off",
   cooldowns: 5,
 };
@@ -24,13 +23,13 @@ if (!fs.existsSync(pathFile))
 
 module.exports. run = async ({ api, event, args }) => {
    try {
-     const logger = require("../../ALVI/catalogs/alvic.js");
+     const logger = require("../../Nayan/catalogs/Nayanc.js");
      if (args[0] == 'on') {
        fs.writeFileSync(pathFile, 'true');
-       api.sendMessage('-Ø𝗸 𝗕Ø𝘀𝘀 _//-😍.', event.threadID, event.messageID);
+       api.sendMessage('the autoseen function is now enabled for new messages.', event.threadID, event.messageID);
      } else if (args[0] == 'off') {
        fs.writeFileSync(pathFile, 'false');
-       api.sendMessage('-Ø𝗳𝗳 𝗱𝗼𝗻𝗲 𝗯Ø𝘀𝘀_//-🥳.', event.threadID, event.messageID);
+       api.sendMessage('the autoseen function has been disabled for new messages.', event.threadID, event.messageID);
      } else {
        api.sendMessage('incorrect syntax', event.threadID, event.messageID);
      }
